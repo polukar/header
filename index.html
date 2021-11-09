@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title> :: Frontend pack</title>
+    <!--
+    link(rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png")
+    link(rel="manifest" href="assets/site.webmanifest")
+    link(rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#ffffff")
+    link(rel="shortcut icon" href="assets/favicon.ico")
+    meta(name="msapplication-TileColor" content="#ffffff")
+    meta(name="msapplication-config" content="assets/browserconfig.xml")
+    meta(name="theme-color" content="#ffffff")
+    
+    -->
+    <meta name="description" content="Description">
+    <meta property="og:url" content="https://">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="title">
+    <meta property="twitter:title" content="title">
+    <meta property="og:description" content="description">
+    <meta property="twitter:description" content="description">
+    <meta property="og:image" content="assets/share.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Nunito+Sans:wght@400;600;700;900&amp;display=swap">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=1cfce894-81e9-424c-b7af-ccc21b4ca1b2&amp;lang=ru_RU" type="text/javascript"></script>
+  </head>
+  <body class="body">
+    <div class="header --desktop">
+      <div class="header-top">
+        <div class="container --flex --jcsb --aicn">
+          <div class="header__city">
+             Ваш город <b>г. Белгород</b>
+                <svg class="svgsprite _arrow">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#arrow"></use>
+                </svg>
+          </div>
+          <div class="header__btns"> <a class="header__link" href="#"> 
+                  <svg class="svgsprite _phone">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#phone"></use>
+                  </svg> 8 (4722) 25-71-11</a><a class="header__link" href="#"> 
+                  <svg class="svgsprite _email">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#email"></use>
+                  </svg> info@ximtek.ru</a>
+            <button class="header__enter">Вход для юридических лиц и ИП</button>
+          </div>
+        </div>
+      </div>
+      <div class="header-middle">
+        <div class="container --flex --jcsb --aicn">
+          <div class="header__logo"> <img src="./assets/img/logo.png" alt=""></div>
+          <div class="header__catalog">
+            <div class="header__catalog-burger">
+                  <svg class="svgsprite _burger">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#burger"></use>
+                  </svg>
+            </div>
+            <div class="header__catalog-close">
+                  <svg class="svgsprite _close">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#close"></use>
+                  </svg>
+            </div>Каталог
+          </div>
+          <div class="header__search">
+            <input class="search" type="text" placeholder="Искать на сайте">
+            <button class="search__btn">
+                  <svg class="svgsprite _search">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#search"></use>
+                  </svg>
+            </button>
+          </div>
+          <div class="header__btns"> 
+            <div class="header__user">
+                  <svg class="svgsprite _header-users">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#header-users"></use>
+                  </svg>
+              <p>Константин</p>
+            </div>
+            <div class="header__basket">
+              <div class="basket__ico">
+                    <svg class="svgsprite _basket">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#basket"></use>
+                    </svg>
+                <div class="basket__number">99</div>
+              </div>
+              <p>999999 ₽</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container">
+          <nav class="nav"><a class="nav__link" href="#">Оплата и доставка</a><a class="nav__link" href="#">Возвраты</a>
+            <div class="nav__link nav__link--drop" href="#">
+               О компании
+                  <svg class="svgsprite _nav-drop">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#nav-drop"></use>
+                  </svg>
+            </div><a class="nav__link" href="#">Сервис и услуги</a><a class="nav__link" href="#">Вопрос-ответ</a><a class="nav__link" href="#">Новости</a><a class="nav__link" href="#">Контакты</a><a class="nav__link nav__link--stock" href="#">
+               Акции
+                  <svg class="svgsprite _fire">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#fire"></use>
+                  </svg></a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="header__menu"> 
+      <div class="container --flex">
+        <div class="menu__left">
+          <div class="menu__items">
+            <div class="menu__item active">Инвентарь</div>
+            <div class="menu__item">Оборудование</div>
+            <div class="menu__item">Средства индивидуальной защиты</div>
+            <div class="menu__item">Грязезащита</div>
+            <div class="menu__item">Профессиональные моющие и дезинфицирующие средства</div>
+            <div class="menu__item">Дезинфицирующие коврики </div>
+            <div class="menu__item">Протирочная продукция</div>
+            <div class="menu__item">Пластиковая тара, мусорные контейнеры и баки</div>
+          </div>
+        </div>
+        <div class="menu__right">
+          <div class="menu__tab active">
+            <div class="menu__col"> 
+              <div class="menu__title">Перчатки</div><a class="menu__link" href="#">Нитрил</a><a class="menu__link" href="#">Винил</a><a class="menu__link" href="#">Латекс</a>
+            </div>
+            <div class="menu__col"> 
+              <div class="menu__title">Маска медицинская</div><a class="menu__link" href="#">Маска трёхслойная</a><a class="menu__link" href="#">Распиратор</a>
+            </div>
+            <div class="menu__col"> 
+              <div class="menu__title">Шапочки</div><a class="menu__link" href="#">Все шапочки</a>
+            </div>
+            <div class="menu__col"> 
+              <div class="menu__title">Фартуки, халаты, нарукавники</div><a class="menu__link" href="#">Фартуки</a><a class="menu__link" href="#">Нарукавники</a><a class="menu__link" href="#">Халаты</a><a class="menu__link" href="#">Комбинезоны</a>
+            </div>
+          </div>
+          <div class="menu__tab"></div>
+          <div class="menu__tab"></div>
+          <div class="menu__tab"></div>
+          <div class="menu__tab"></div>
+          <div class="menu__tab"></div>
+          <div class="menu__tab"></div>
+          <div class="menu__tab"></div>
+        </div>
+      </div>
+    </div>
+    <div class="header --mobile">
+      <div class="container --flex --jcsb">
+        <div class="header__city"> 
+          <div class="header__city-text">Ваш город <br><b>г. Белгород</b></div>
+              <svg class="svgsprite _mobile-arrow">
+                <use xlink:href="assets/img/sprites/svgsprites.svg#mobile-arrow"></use>
+              </svg>
+        </div>
+        <div class="header__logo"> <img src="./assets/img/logo.png" alt=""></div>
+        <div class="header__btns"> <a class="header__link" href="#"> 
+                <svg class="svgsprite _mobile-phone">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#mobile-phone"></use>
+                </svg></a><a class="header__link" href="#"> 
+                <svg class="svgsprite _mobile-email">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#mobile-email"></use>
+                </svg></a></div>
+      </div>
+      <div class="container">
+        <button class="header__enter">Вход для юридических лиц и ИП</button>
+        <div class="header__search">
+          <input class="search" type="text" placeholder="Искать на сайте">
+          <button class="search__btn">
+                <svg class="svgsprite _search">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#search"></use>
+                </svg>
+          </button>
+        </div>
+        <nav class="nav"><a class="nav__link" href="#">Вопрос-ответ</a><a class="nav__link" href="#">Новости</a><a class="nav__link" href="#">Контакты</a><a class="nav__link nav__link--stock" href="#">
+             Акции
+                <svg class="svgsprite _fire">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#fire"></use>
+                </svg></a><a class="nav__link" href="#">Оплата и доставка</a>
+          <div class="nav__link nav__link--drop" href="#">
+             О компании
+                <svg class="svgsprite _nav-drop">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#nav-drop"></use>
+                </svg>
+          </div><a class="nav__link" href="#">Сервис и услуги</a>
+        </nav>
+      </div>
+    </div>
+    <div class="mobile__catalog">
+      <div class="mobile__catalog-title">Каталог</div>
+      <div class="mobile__catalog-close">
+            <svg class="svgsprite _catalog-close">
+              <use xlink:href="assets/img/sprites/svgsprites.svg#catalog-close"></use>
+            </svg>
+      </div>
+      <div class="mobile__catalog-first mobile__catalog-panel"> 
+        <div class="mobile__catalog-link --first">Инвентарь</div>
+        <div class="mobile__catalog-link --first">Оборудование</div>
+        <div class="mobile__catalog-link --first">Средства индивидуальной защиты</div>
+        <div class="mobile__catalog-link --first">Грязезащита </div>
+        <div class="mobile__catalog-link --first">Профессиональные моющие и дезинфицирующие средства</div>
+        <div class="mobile__catalog-link --first">Дезинфицирующие коврики </div>
+        <div class="mobile__catalog-link --first">Протирочная продукция</div>
+        <div class="mobile__catalog-link --first">Пластиковая тара, мусорные контейнеры и баки</div>
+        <div class="mobile__catalog-link --first">Оборудование</div>
+      </div>
+      <div class="mobile__catalog-second mobile__catalog-panel">
+            <div class="mobile__catalog-second-tab">
+              <div class="mobile__catalog-back mobile__catalog-back-second">
+                    <svg class="svgsprite _back">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#back"></use>
+                    </svg>Средства индивидуальной защиты
+              </div>
+              <div class="mobile__catalog--links">
+                <div class="mobile__catalog-link --second">Пункт 2 уровня</div>
+              </div>
+            </div>
+            <div class="mobile__catalog-second-tab">
+              <div class="mobile__catalog-back mobile__catalog-back-second">
+                    <svg class="svgsprite _back">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#back"></use>
+                    </svg>Средства индивидуальной защиты
+              </div>
+              <div class="mobile__catalog--links">
+                <div class="mobile__catalog-link --second">Пункт 2 уровня</div>
+              </div>
+            </div>
+            <div class="mobile__catalog-second-tab">
+              <div class="mobile__catalog-back mobile__catalog-back-second">
+                    <svg class="svgsprite _back">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#back"></use>
+                    </svg>Средства индивидуальной защиты
+              </div>
+              <div class="mobile__catalog--links">
+                <div class="mobile__catalog-link --second">Пункт 2 уровня</div>
+              </div>
+            </div>
+            <div class="mobile__catalog-second-tab">
+              <div class="mobile__catalog-back mobile__catalog-back-second">
+                    <svg class="svgsprite _back">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#back"></use>
+                    </svg>Средства индивидуальной защиты
+              </div>
+              <div class="mobile__catalog--links">
+                <div class="mobile__catalog-link --second">Пункт 2 уровня</div>
+              </div>
+            </div>
+            <div class="mobile__catalog-second-tab">
+              <div class="mobile__catalog-back mobile__catalog-back-second">
+                    <svg class="svgsprite _back">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#back"></use>
+                    </svg>Средства индивидуальной защиты
+              </div>
+              <div class="mobile__catalog--links">
+                <div class="mobile__catalog-link --second">Пункт 2 уровня</div>
+              </div>
+            </div>
+            <div class="mobile__catalog-second-tab">
+              <div class="mobile__catalog-back mobile__catalog-back-second">
+                    <svg class="svgsprite _back">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#back"></use>
+                    </svg>Средства индивидуальной защиты
+              </div>
+              <div class="mobile__catalog--links">
+                <div class="mobile__catalog-link --second">Пункт 2 уровня</div>
+              </div>
+            </div>
+            <div class="mobile__catalog-second-tab">
+              <div class="mobile__catalog-back mobile__catalog-back-second">
+                    <svg class="svgsprite _back">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#back"></use>
+                    </svg>Средства индивидуальной защиты
+              </div>
+              <div class="mobile__catalog--links">
+                <div class="mobile__catalog-link --second">Пункт 2 уровня</div>
+              </div>
+            </div>
+            <div class="mobile__catalog-second-tab">
+              <div class="mobile__catalog-back mobile__catalog-back-second">
+                    <svg class="svgsprite _back">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#back"></use>
+                    </svg>Средства индивидуальной защиты
+              </div>
+              <div class="mobile__catalog--links">
+                <div class="mobile__catalog-link --second">Пункт 2 уровня</div>
+              </div>
+            </div>
+      </div>
+      <div class="mobile__catalog-third mobile__catalog-panel">
+            <div class="mobile__catalog-third-tab">
+              <div class="mobile__catalog-back mobile__catalog-back-third">
+                    <svg class="svgsprite _back">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#back"></use>
+                    </svg>Пункт 2 уровня
+              </div>
+              <div class="mobile__catalog--links"><a class="mobile__catalog-link --third" href="#"> Пункт 3 уровня</a></div>
+            </div>
+            <div class="mobile__catalog-third-tab">
+              <div class="mobile__catalog-back mobile__catalog-back-third">
+                    <svg class="svgsprite _back">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#back"></use>
+                    </svg>Пункт 2 уровня
+              </div>
+              <div class="mobile__catalog--links"><a class="mobile__catalog-link --third" href="#"> Пункт 3 уровня</a></div>
+            </div>
+            <div class="mobile__catalog-third-tab">
+              <div class="mobile__catalog-back mobile__catalog-back-third">
+                    <svg class="svgsprite _back">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#back"></use>
+                    </svg>Пункт 2 уровня
+              </div>
+              <div class="mobile__catalog--links"><a class="mobile__catalog-link --third" href="#"> Пункт 3 уровня</a></div>
+            </div>
+            <div class="mobile__catalog-third-tab">
+              <div class="mobile__catalog-back mobile__catalog-back-third">
+                    <svg class="svgsprite _back">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#back"></use>
+                    </svg>Пункт 2 уровня
+              </div>
+              <div class="mobile__catalog--links"><a class="mobile__catalog-link --third" href="#"> Пункт 3 уровня</a></div>
+            </div>
+            <div class="mobile__catalog-third-tab">
+              <div class="mobile__catalog-back mobile__catalog-back-third">
+                    <svg class="svgsprite _back">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#back"></use>
+                    </svg>Пункт 2 уровня
+              </div>
+              <div class="mobile__catalog--links"><a class="mobile__catalog-link --third" href="#"> Пункт 3 уровня</a></div>
+            </div>
+            <div class="mobile__catalog-third-tab">
+              <div class="mobile__catalog-back mobile__catalog-back-third">
+                    <svg class="svgsprite _back">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#back"></use>
+                    </svg>Пункт 2 уровня
+              </div>
+              <div class="mobile__catalog--links"><a class="mobile__catalog-link --third" href="#"> Пункт 3 уровня</a></div>
+            </div>
+            <div class="mobile__catalog-third-tab">
+              <div class="mobile__catalog-back mobile__catalog-back-third">
+                    <svg class="svgsprite _back">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#back"></use>
+                    </svg>Пункт 2 уровня
+              </div>
+              <div class="mobile__catalog--links"><a class="mobile__catalog-link --third" href="#"> Пункт 3 уровня</a></div>
+            </div>
+            <div class="mobile__catalog-third-tab">
+              <div class="mobile__catalog-back mobile__catalog-back-third">
+                    <svg class="svgsprite _back">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#back"></use>
+                    </svg>Пункт 2 уровня
+              </div>
+              <div class="mobile__catalog--links"><a class="mobile__catalog-link --third" href="#"> Пункт 3 уровня</a></div>
+            </div>
+      </div>
+    </div>
+    <div class="mobile__menu"> 
+      <div class="container"><a class="mobile__menu-link" href="index.html"> 
+          <div class="mobile__menu-ico">
+                <svg class="svgsprite _mobile-i1">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#mobile-i1"></use>
+                </svg>
+          </div>
+          <p>Главная</p></a>
+        <div class="mobile__menu-link --open-catalog">
+          <div class="mobile__menu-ico">
+                <svg class="svgsprite _mobile-burger">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#mobile-burger"></use>
+                </svg>
+          </div>
+          <p>Каталог</p>
+        </div>
+        <div class="mobile__menu-link">
+          <div class="mobile__menu-ico">
+                <svg class="svgsprite _mobile-user">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#mobile-user"></use>
+                </svg>
+          </div>
+          <p>Константин</p>
+        </div>
+        <div class="header__basket">
+          <div class="basket__ico">
+                <svg class="svgsprite _basket">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#basket"></use>
+                </svg>
+            <div class="basket__number">99</div>
+          </div>
+          <p>999999 ₽</p>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+    </div>
+    <script src="assets/js/vendors~main.bundle.js"></script>
+    <script src="assets/js/main.bundle.js?v=1.2.3"></script>
+  </body>
+</html>
